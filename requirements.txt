@@ -1,0 +1,9 @@
+transformers==4.17.0
+datasets==1.18.4
+sacrebleu==2.0
+wandb
+nltk
+accelerate==0.5.1
+tensorboard
+setuptools<50
+rouge_score
