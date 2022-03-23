@@ -8,7 +8,7 @@ Joint Distillation and Quantization](https://arxiv.org/pdf/2203.11239.pdf)."
 - The teacher model should be available locally, e.g., downloading manually from the [huggingface model hub](https://huggingface.co/models).
 
 ## Sample Command
-- The following command will train an `8-8-8 3-1` model on CNN/DailyMail dataset. You should adjust `model_name_or_path` and `dataset_name` accordingly for other tasks. You may use [accelerate](https://github.com/huggingface/accelerate) for distributed training. 
+- The following command will train an `8-8-8 3-1` model on CNN/DailyMail dataset. You may use [accelerate](https://github.com/huggingface/accelerate) for distributed training. 
     ```bash
     python3 run_summarization_no_trainer.py 
       --model_name_or_path bart-base-cnn 
