@@ -10,19 +10,19 @@ Joint Distillation and Quantization](https://arxiv.org/pdf/2203.11239.pdf)."
 ## Sample Command
 - The following command will train an `8-8-8 3-1` model on CNN/DailyMail dataset. You may use [accelerate](https://github.com/huggingface/accelerate) for distributed training. 
     ```bash
-    python3 run_summarization_no_trainer.py 
-      --model_name_or_path bart-base-cnn 
-      --dataset_name cnn_dailymail 
-      --dataset_config_name 3.0.0 
-      --pred_distill 
-      --intermediate_distill 
-      --num_train_epochs 20 
-      --weight_bits 8 
-      --do_train 
-      --do_test 
-      --distill_encoder 3 
-      --distill_decoder 1 
-      --learning_rate 3e-5
+    python3 run_summarization_no_trainer.py \
+      --model_name_or_path ainize/bart-base-cnn \
+      --dataset_name cnn_dailymail \
+      --dataset_config_name 3.0.0 \
+      --pred_distill \
+      --intermediate_distill \
+      --num_train_epochs 20 \
+      --weight_bits 8 \
+      --do_train \
+      --do_test \
+      --distill_encoder 3 \
+      --distill_decoder 1 \
+      --learning_rate 3e-5 
     ```
 ## Citation
 You may cite our work using

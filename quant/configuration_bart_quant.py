@@ -23,6 +23,8 @@ from transformers.configuration_utils import PretrainedConfig
 from transformers.onnx import OnnxConfigWithPast
 from transformers.utils import logging
 
+from huggingface_hub import hf_hub_url, cached_download
+
 import json
 import sys
 import os
@@ -215,11 +217,11 @@ class BartConfig(PretrainedConfig):
 
     @classmethod
     def from_pretrained(cls, pretrained_model_name_or_path, **kwargs):
-        config_file = os.path.join(pretrained_model_name_or_path, CONFIG_NAME)
+        config_file = cached_download(hf_hub_url(pretrained_model_name_or_path, CONFIG_NAME))
         logger.info("loading configuration file {}".format(config_file))
         # Load config
-        config = cls.from_json_file(config_file)
-
+        config = cls.from_json_file(config_file)  
+        
         # Update config with kwargs if needed
         to_remove = []
         for key, value in kwargs.items():
