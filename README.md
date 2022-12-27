@@ -1,4 +1,4 @@
-## DQ-BART
+## DQ-BART:  Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization
 This repository contains the authors' implementation of the ACL 2022 paper "[DQ-BART: Efficient Sequence-to-Sequence Model via
 Joint Distillation and Quantization](https://arxiv.org/pdf/2203.11239.pdf)."
 
@@ -28,10 +28,10 @@ Joint Distillation and Quantization](https://arxiv.org/pdf/2203.11239.pdf)."
 You may cite our work using
 ```
 @inproceedings{li2022dqbart,
-  author={Li, Zheng and Wang, Zijian and Tan, Ming and Nallapati, Ramesh and Bhatia, Parminder and Arnold, Andrew and Xiang, Bing and Roth, Dan},
-  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics},
   title={DQ-BART: Efficient Sequence-to-Sequence Model via Joint Distillation and Quantization},
-  url={https://arxiv.org/pdf/2203.11239.pdf},
+  author={Li, Zheng and Wang, Zijian and Tan, Ming and Nallapati, Ramesh and Bhatia, Parminder and Arnold, Andrew and Xiang, Bing and Roth, Dan},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  pages={203--211},
   year={2022}
 }
 ```
